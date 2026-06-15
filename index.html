@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Requêtes DIP - Globe Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="globe-wrapper">
+        <canvas id="globeCanvas"></canvas>
+    </div>
+
+    <!-- Infos overlay -->
+    <div class="overlay">
+        <div class="top-info">
+            <h1>Requêtes DIP</h1>
+            <p>En temps réel</p>
+        </div>
+
+        <div class="bottom-info">
+            <div class="stats-container">
+                <div class="stat">
+                    <span class="stat-number" id="rpsValue">0</span>
+                    <span class="stat-label">/min</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" id="totalValue">0</span>
+                    <span class="stat-label">Total</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" id="activeValue">0</span>
+                    <span class="stat-label">Actifs</span>
+                </div>
+            </div>
+
+            <div class="last-request" id="lastRequest">
+                <p>Aucune requête</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
